@@ -22,4 +22,12 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    head: {
+      title: 'Nuxt Dojo',
+      meta: [
+        { name: 'description', content: 'Everything about Nuxt 3' }
+      ],
+    }
+  }
 })
