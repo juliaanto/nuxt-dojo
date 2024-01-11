@@ -1,28 +1,31 @@
 <template>
-  <div>
-    <header>
-      <nav>
-        <NuxtLink to="/products">Nuxt Dojo Merch</NuxtLink>
-
-      </nav>
-    </header>
+  <v-app>
+    <v-app-bar>
+      <v-container>
+        <v-btn exact to="/" variant="text" class="font-weight-bold text-teal-accent-4">Nuxt Dojo</v-btn>
+      </v-container>
+    </v-app-bar>
 
     <div>
-      <slot />
+      <v-container class="custom-container">
+        <slot />
+      </v-container>
     </div>
 
-    <footer>
-      <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/products">Products</NuxtLink></li>
-      </ul>
-    </footer>
-  </div>
+    <v-footer>
+      <v-container>
+        <v-list class="d-flex" color="#12b488">
+          <v-list-item link exact title="Home" to="/"></v-list-item>
+          <v-list-item link exact title="About" to="/about"></v-list-item>
+          <v-list-item link exact title="Products" to="/products"></v-list-item>
+        </v-list>
+      </v-container>
+    </v-footer>
+  </v-app>
 </template>
 
 <style scoped>
-  .router-link-exact-active {
-    color: #12b488;
+  .custom-container {
+    margin-top: 100px;
   }
 </style>

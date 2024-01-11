@@ -4,7 +4,7 @@
       <v-container>
         <v-row justify="space-between" align="center">
           <v-col>
-            <v-btn exact to="/" variant="plain">Nuxt Dojo</v-btn>
+            <v-btn exact to="/" variant="text" class="font-weight-bold text-teal-accent-4">Nuxt Dojo</v-btn>
           </v-col>
           <v-col>
             <v-list class="d-flex justify-end" color="#12b488">
