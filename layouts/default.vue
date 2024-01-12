@@ -9,8 +9,7 @@
           <v-col>
             <v-list class="d-flex justify-end" color="#12b488">
               <v-list-item link exact title="Home" to="/"></v-list-item>
-              <v-list-item link exact title="About" to="/about"></v-list-item>
-              <v-list-item link exact title="Products" to="/products"></v-list-item>
+              <v-list-item link exact title="Categories" to="/categories"></v-list-item>
             </v-list>
           </v-col>
         </v-row>

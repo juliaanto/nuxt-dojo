@@ -1,13 +1,27 @@
 <template>
-  <div>
-    <h2 class="text-h2">Home</h2>
-    <p class="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, facere sunt. Perspiciatis sapiente ipsum, quod accusamus illo distinctio animi commodi.</p>
-    <p class="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, facere sunt. Perspiciatis sapiente ipsum, quod accusamus illo distinctio animi commodi.</p>
-  </div>
+  <v-row align="stretch">
+    <v-col
+      v-for="product in products" 
+      :key="product.id"
+      cols="3"
+    >
+      <ProductCard :product="product"/>
+    </v-col>
+  </v-row>
 </template>
 
 <script setup>
+  definePageMeta({
+    layout: 'products'
+  })
 
+  const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+  useHead({
+    title: 'Nuxt Dojo | Merch'
+  })
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
