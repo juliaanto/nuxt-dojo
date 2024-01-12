@@ -29,5 +29,8 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Everything about Nuxt 3' }
       ],
     }
-  }
+  },
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY
+  },
 })
