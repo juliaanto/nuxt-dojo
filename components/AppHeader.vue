@@ -12,6 +12,9 @@
               <v-list-item link exact title="Categories" to="/categories"></v-list-item>
             </v-list>
           </v-col>
+          <v-col class="flex-grow-0">
+            <CurrencySwitcher />
+          </v-col>
         </v-row>
       </v-container>
     </v-app-bar>
