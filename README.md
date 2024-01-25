@@ -1,75 +1,45 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Dojo
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt Dojo is a project designed for learning web development concepts, focusing on building a basic online shop with product listings, currency switching, and a category chart.
 
-## Setup
 
-Make sure to install the dependencies:
+## Technologies Used
+- Nuxt
+- TypeScript
+- Pinia
+- Vuetify
+- Chart.js
+
+
+## Key Features
+
+- **Product Listing:** Products are displayed using the [Fake Store API](https://fakestoreapi.com/).
+- **Currency Switcher:** Utilizes the [Currency Conversion API](https://currencyapi.com/) with an API key.
+- **State Management:** Leverages Pinia for efficient application state management.
+- **Category Chart:** Includes a category chart implemented using Chart.js.
+
+
+## Getting Started
+
+To run the project locally, use the following commands:
 
 ```bash
-# npm
+git clone https://github.com/juliaanto/nuxt-dojo.git
+cd nuxt-dojo
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Visit [Live Demo on Netlify](https://heartfelt-snickerdoodle-0f2adc.netlify.app/) to see the Nuxt Dojo in action.
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+## Project Structure
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `pages/`: Nuxt.js pages for routing and views.
+- `stores/`: Pinia store modules for efficient state management.
+- `components/`: Reusable Vue components for modularity.
+- `plugins/`: Nuxt.js plugins for additional functionality.
+- `data/`: Store static data files.
+- `layouts/`: Custom layouts for different sections of the application.
+- `public/`: Public assets such as images, fonts, or other static files.
+- `server/`: Code for API registration and server-side handlers.
