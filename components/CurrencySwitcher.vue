@@ -5,7 +5,7 @@
       :model-value=currencyStore.currentCurrency.code
       hide-details
       variant="plain"
-      class="select"
+      class="select pb-2"
       density="compact"
       @update:model-value="handleUpdate"
     ></v-select>
