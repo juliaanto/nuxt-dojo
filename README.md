@@ -9,6 +9,7 @@ Nuxt Dojo is a project designed for learning web development concepts, focusing 
 - Pinia
 - Vuetify
 - Chart.js
+- Cypress
 
 
 ## Key Features
@@ -32,6 +33,15 @@ npm run dev
 
 Visit [Live Demo on Netlify](https://heartfelt-snickerdoodle-0f2adc.netlify.app/) to see the Nuxt Dojo in action.
 
+## E2E Testing with Cypress
+
+End-to-end (e2e) testing is implemented using [Cypress](https://www.cypress.io/).
+
+To run the e2e tests locally, use the following command:
+
+```bash
+npm run cypress:open
+```
 
 ## Project Structure
 

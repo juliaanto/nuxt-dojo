@@ -6,7 +6,7 @@
       :src="product.image"
       height="200px"
     ></v-img>
-    <v-card-title v-text="product.title" class="text-subtitle-1 pb-0"></v-card-title>
+    <v-card-title class="text-subtitle-1 pb-0">{{product.title}}</v-card-title>
     <v-card-text class="text-subtitle-2 pt-0 pb-1 font-weight-bold">{{ currencyStore.price(product.price) }}</v-card-text>
     
     <v-card-actions>

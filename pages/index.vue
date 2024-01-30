@@ -4,6 +4,7 @@
       v-for="product in products" 
       :key="product.id"
       cols="3"
+      data-test="product-list"
     >
       <ProductCard :product="product"/>
     </v-col>
@@ -15,7 +16,7 @@
     layout: 'products'
   })
 
-  const { data: products } = await useFetch('https://fakestoreapi.com/products')
+  const products = await $fetch('https://fakestoreapi.com/products');
 
   useHead({
     title: 'Nuxt Dojo | Merch'
